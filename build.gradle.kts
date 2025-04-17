@@ -57,4 +57,12 @@ tasks.processResources {
             }
         }
     }
+    from("src/main/resources") {
+        include("**/*.xml")
+
+        eachFile {
+            // Rename: theme.json5 → theme.json
+            name = name.removeSuffix(".xml") + ".icls"
+        }
+    }
 }
