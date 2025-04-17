@@ -1,5 +1,8 @@
+import blue.endless.jankson.JsonGrammar
+import coffee.cypher.json_processor.*
 plugins {
     id("org.jetbrains.intellij.platform") version "2.5.0"
+    id("coffee.cypher.json-processor") version "0.1.0"
 //    kotlin("jvm") version "1.9.22" // Optional, remove if not using Kotlin
 }
 
@@ -20,9 +23,8 @@ repositories {
     }
 }
 dependencies {
-    // Add any dependencies if needed
     intellijPlatform {
-        intellijIdeaCommunity("2024.3")
+        intellijIdeaCommunity("2025.1")
     }
 }
 
@@ -34,5 +36,25 @@ tasks {
 
     runIde {
 //        ideDirectory.set(file("/path/to/your/intellij")) // Optional: specify a local IDE
+    }
+}
+
+tasks.processResources {
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+
+    // Remove original .json5 from being copied as-is
+//    exclude("**/*.json5")
+
+    from("src/main/resources") {
+        include("**/*.json5")
+
+        eachFile {
+            // Rename: theme.json5 → theme.json
+            name = name.removeSuffix(".json5") + ".json"
+
+            processJson {
+                outputFormat = JsonGrammar.STRICT
+            }
+        }
     }
 }
