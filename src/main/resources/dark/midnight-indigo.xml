@@ -11,8 +11,8 @@
         <option name="ANNOTATIONS_COLOR" value="8D9199" />
         <option name="ANNOTATIONS_LAST_COMMIT_COLOR" value="CED0D6" />
         <option name="BLOCK_TERMINAL_DEFAULT_BACKGROUND" value="F00000" />
-        <option name="CARET_COLOR" value="CED0D6" />
-        <option name="CARET_ROW_COLOR" value="26282E" />
+        <option name="CARET_COLOR" value="F3F311" />
+        <option name="CARET_ROW_COLOR" value="1C1B3C" />
         <option name="CONSOLE_BACKGROUND_KEY" value="000000" />
         <option name="DELETED_LINES_COLOR" value="868A91" />
         <option name="DIFF_SEPARATORS_BACKGROUND" value="2B2D30" />
@@ -39,7 +39,6 @@
         <option name="FILESTATUS_addedOutside" value="62CC47" />
         <option name="FILESTATUS_changelistConflict" value="FF6666" />
         <option name="FILESTATUS_modifiedOutside" value="4FF0FF" />
-        <option name="FOLDED_TEXT_BORDER_COLOR" value="2B2D30" />
         <option name="IGNORED_ADDED_LINES_BORDER_COLOR" value="549159" />
         <option name="IGNORED_DELETED_LINES_BORDER_COLOR" value="868A91" />
         <option name="IGNORED_MODIFIED_LINES_BORDER_COLOR" value="375FAD" />
@@ -357,7 +356,7 @@
         </option>
         <option name="DEFAULT_STRING">
             <value>
-                <option name="FOREGROUND" value="96d0ff" />
+                <option name="FOREGROUND" value="d6ddc6" />
             </value>
         </option>
         <option name="DEFAULT_TAG">
@@ -378,7 +377,6 @@
         <option name="DELETED_TEXT_ATTRIBUTES">
             <value>
                 <option name="FOREGROUND" value="bbbbbb" />
-                <option name="BACKGROUND" value="101019" />
                 <option name="EFFECT_COLOR" value="c3c3c3" />
                 <option name="EFFECT_TYPE" value="3" />
             </value>
@@ -404,7 +402,6 @@
         <option name="FOLDED_TEXT_ATTRIBUTES">
             <value>
                 <option name="FOREGROUND" value="868991" />
-                <option name="BACKGROUND" value="393b40" />
             </value>
         </option>
         <option name="FOLLOWED_HYPERLINK_ATTRIBUTES">

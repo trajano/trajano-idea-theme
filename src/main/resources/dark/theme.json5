@@ -7,7 +7,6 @@
   "colors": {
     "background": "indigo-700",
     "foreground": "green-50",
-
     "blue-900": "#0E1020",
     // Near-black navy blue
     "blue-800": "#141A3D",
@@ -31,25 +30,25 @@
 
 
     "indigo-900": "#0D0B1E",
-    // Deepest Indigo
-    "indigo-800": "#101019",
-    // Deep Space Indigo — your anchor
-    "indigo-700": "#202040",
+    // Deepest Indigo - anchor
+    "indigo-800": "#121227",
+    // Deep Space Indigo
+    "indigo-700": "#1C1B3C",
     // Nocturne Indigo
-    "indigo-600": "#2D2D5A",
+    "indigo-600": "#292858",
     // Shadow Indigo
-    "indigo-500": "#3B3B74",
+    "indigo-500": "#373676",
     // Base Indigo
-    "indigo-400": "#52528C",
+    "indigo-400": "#4F4F90",
     // Muted Violet Indigo
-    "indigo-300": "#7070A5",
+    "indigo-300": "#6D6DAA",
     // Slate Lilac
-    "indigo-200": "#9A9AC2",
+    "indigo-200": "#9797C8",
     // Soft Indigo Mist
-    "indigo-100": "#C4C4E5",
+    "indigo-100": "#C1C1E6",
     // Lilac Smoke
-    "indigo-50": "#E6E6F8",
-    // Haze Indigo (very subtle)
+    "indigo-50": "#E4E4FA",
+    // Haze Indigo (very subtle) -- anchor
 
     "green-900": "#1A1F1A",
     // Deep forest (just for completeness)
@@ -72,7 +71,7 @@
     "green-50": "#E3EEDC",
     // Pale minty gray
 
-//    "selectionForeground": "foreground",
+    //    "selectionForeground": "foreground",
     "primaryRed": "#821010",
     "primaryBlue": "#2020cc",
     "primaryYellow": "#cccc20",
@@ -84,9 +83,8 @@
     "disabledText": "#777777",
     // panels are black, they're not the focus of the work.
     "panel": "#000000",
-//    "menu": "#202020",
+    //    "menu": "#202020",
     "menu": "green-800",
-
     "lightBorder": "#cccccc",
     //    "menuBarActiveBackground": "#303030",
     //"menuSelectionBackground": "#101030",
@@ -99,6 +97,8 @@
   },
   "ui": {
     "*": {
+      "fontFace": "Segoe UI",
+      "fontSize": 14,
       "background": "panel",
       "disabledForeground": "disabled",
       "foreground": "foreground",
@@ -108,10 +108,12 @@
     },
     "Button": {
       "default": {
-        // "shadowColor"
+        "shadowColor": "indigo-900",
+        "background": "indigo-800",
+        "foreground": "foreground"
       }
     },
-    "Checkbox": {
+    "CheckBox": {
       "background": "panel"
     },
     "Component": {
@@ -170,12 +172,12 @@
       "ToolWindow": {
         "errorBackground": "primaryRed",
         "errorBorderColor": "primaryRed",
-        "informativeBackground": "menu",
-        "informativeBorderColor": "menu",
+        "informativeBackground": "indigo-800",
+        "informativeBorderColor": "indigo-800",
         "warningBackground": "menu",
         "warningBorderColor": "menu"
       },
-      "background": "menu"
+      "background": "indigo-800"
     },
     "Popup": {
       "Header": {

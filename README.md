@@ -29,3 +29,5 @@
 
 ## TBD
 - [ ] how to change the terminal color, right now it takes
+
+- The JSON colors change the string to a brighter color

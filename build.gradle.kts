@@ -34,7 +34,7 @@ repositories {
 }
 dependencies {
     intellijPlatform {
-        intellijIdeaCommunity("2024.1")
+        intellijIdeaCommunity("2025.1")
     }
 }
 
@@ -83,7 +83,6 @@ tasks.processResources {
         include("**/*.xml")
 
         eachFile {
-            // Rename: theme.json5 → theme.json
             name = name.removeSuffix(".xml") + ".icls"
         }
     }
