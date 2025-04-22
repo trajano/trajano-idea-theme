@@ -1,5 +1,7 @@
 import blue.endless.jankson.JsonGrammar
 import coffee.cypher.json_processor.*
+import org.jetbrains.intellij.platform.gradle.utils.rootProjectPath
+
 plugins {
     id("org.jetbrains.intellij.platform") version "2.5.0"
     id("coffee.cypher.json-processor") version "0.1.0"
@@ -15,6 +17,14 @@ version = "1.0.0"
 //    plugins.set(listOf()) // You can add dependencies like "java", "Kotlin", etc.
 //}
 
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath("com.vladsch.flexmark:flexmark-all:0.64.0")
+    }
+}
 repositories {
     mavenCentral()
 
@@ -28,8 +38,20 @@ dependencies {
     }
 }
 
+val renderedReadmeHtml by lazy {
+    val readmeFile = rootDir.resolve("README.md")
+    val readmeText = readmeFile.readText()
+    val options = com.vladsch.flexmark.util.data.MutableDataSet()
+    val parser = com.vladsch.flexmark.parser.Parser.builder(options).build()
+    val renderer = com.vladsch.flexmark.html.HtmlRenderer.builder(options).build()
+    val document = parser.parse(readmeText)
+    buildString {
+        append(renderer.render(document))
+    }
+}
 tasks {
     patchPluginXml {
+        pluginDescription = renderedReadmeHtml
 //        sinceBuild.set("232")
 //        untilBuild.set("241.*")
     }

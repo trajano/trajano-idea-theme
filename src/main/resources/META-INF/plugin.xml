@@ -28,6 +28,7 @@
     <!-- Product and plugin compatibility requirements.
          Read more: https://plugins.jetbrains.com/docs/intellij/plugin-compatibility.html -->
     <depends>com.intellij.modules.platform</depends>
+    <resource-bundle>Messages</resource-bundle>
 
     <extensions defaultExtensionNs="com.intellij">
         <themeProvider id="trajano-idea-theme-dark" path="/dark/theme.json"/>
