@@ -356,7 +356,7 @@
         </option>
         <option name="DEFAULT_STRING">
             <value>
-                <option name="FOREGROUND" value="d6ddc6" />
+                <option name="FOREGROUND" value="a7bba2" />
             </value>
         </option>
         <option name="DEFAULT_TAG">
@@ -517,6 +517,11 @@
         <option name="JS.REGEXP">
             <value>
                 <option name="FOREGROUND" value="42c3d4" />
+            </value>
+        </option>
+        <option name="JSON.STRING">
+            <value>
+                <option name="FOREGROUND" value="d6ddc6" />
             </value>
         </option>
         <option name="JSP_DIRECTIVE_NAME">
