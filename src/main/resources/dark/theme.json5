@@ -3,6 +3,7 @@
   "author": "Archimedes Trajano",
   "dark": true,
   "editorScheme": "/dark/midnight-indigo.xml",
+  "parentTheme": "Darcula",
   "colors": {
     "background": "indigo-700",
     "foreground": "green-50",
@@ -29,10 +30,10 @@
     // Ultra pale misty blue
 
 
-    "indigo-900": "#101019",
+    "indigo-900": "#0D0B1E",
+    // Deepest Indigo
+    "indigo-800": "#101019",
     // Deep Space Indigo — your anchor
-    "indigo-800": "#17172A",
-    // Very dark indigo gray
     "indigo-700": "#202040",
     // Nocturne Indigo
     "indigo-600": "#2D2D5A",
@@ -109,6 +110,9 @@
       "default": {
         // "shadowColor"
       }
+    },
+    "Checkbox": {
+      "background": "panel"
     },
     "Component": {
       //      "arc": 0
