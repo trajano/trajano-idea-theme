@@ -9,5 +9,6 @@ class SmartFindAction : AbstractDelayChordAction(
     secondaryActionMap = mapOf(
         KeyEvent.VK_F to IdeActions.ACTION_FIND_IN_PATH,
         KeyEvent.VK_R to IdeActions.ACTION_REPLACE,
+        KeyEvent.VK_H to IdeActions.ACTION_REPLACE_IN_PATH,
     )
 )

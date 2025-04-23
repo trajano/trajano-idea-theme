@@ -30,14 +30,13 @@
     <depends>com.intellij.modules.platform</depends>
     <resource-bundle>Messages</resource-bundle>
     <actions>
-        <action id="SmartFindAction"
+        <action id="trajano.SmartFind"
                 class="net.trajano.intellij.actions.SmartFindAction"
-                text="Smart Find"
-                description="Context-sensitive Ctrl+F behavior" />
+                icon="AllIcons.Actions.Find"/>
     </actions>
     <extensions defaultExtensionNs="com.intellij">
         <themeProvider id="trajano-idea-theme-dark" path="/dark/theme.json"/>
         <themeProvider id="trajano-idea-theme-light" path="/light/theme.json"/>
-        <bundledKeymap file="trajano-keymap.xml" />
+        <bundledKeymap file="Trajano.xml" />
     </extensions>
 </idea-plugin>

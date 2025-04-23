@@ -26,14 +26,15 @@
     <keyboard-shortcut first-keystroke="shift ctrl f" />
   </action>
   <action id="Find">
-    <keyboard-shortcut first-keystroke="ctrl f" />
+  </action>
+  <action id="trajano.SmartFind">
+    <keyboard-shortcut first-keystroke="ctrl f"/>
   </action>
   <action id="Replace">
-    <keyboard-shortcut first-keystroke="ctrl f" second-keystroke="ctrl f" />
   </action>
-  <action id="ReplaceInPath">
-    <keyboard-shortcut first-keystroke="ctrl h" />
-  </action>
+<!--  <action id="ReplaceInPath">-->
+<!--    <keyboard-shortcut first-keystroke="ctrl h" />-->
+<!--  </action>-->
   <action id="Terminal.DeletePreviousWord" />
   <action id="Terminal.SwitchFocusToEditor" />
   <action id="UsageFiltering.WriteAccess" />
