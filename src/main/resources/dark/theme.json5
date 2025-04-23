@@ -128,6 +128,7 @@
       "hoverInactiveBackground": "activeBackground",
       "hoverSelectedBackground": "activeBackground",
       "hoverSelectedInactiveBackground": "activeBackground",
+      "underlinedTabBackground": "activeBackground",
       "inactiveColoredFileBackground": "backgroundDefault",
       "underlineArc": 4,
       "underlineHeight": 4

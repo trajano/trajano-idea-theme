@@ -5,7 +5,8 @@ import org.jetbrains.intellij.platform.gradle.utils.rootProjectPath
 plugins {
     id("org.jetbrains.intellij.platform") version "2.5.0"
     id("coffee.cypher.json-processor") version "0.1.0"
-//    kotlin("jvm") version "1.9.22" // Optional, remove if not using Kotlin
+    kotlin("jvm") version "2.1.20"
+
 }
 
 group = "net.trajano"
